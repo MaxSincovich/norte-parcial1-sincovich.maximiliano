@@ -1,0 +1,53 @@
+﻿body {
+}
+
+
+
+#container {
+    width: 85%;
+    margin-left: 5%;
+    background-color: #ccc;
+}
+
+aside {
+    width: 15%;
+    float: left;
+    min-height: 500px;
+    text-align:left;
+    background-color: #fff;
+}
+
+
+section {
+    float: right;
+    min-height: 500px;
+    width: 85%;
+}
+
+header {
+    background-color: #286af0;
+    min-height: 50px;
+}
+
+
+footer {
+    clear: both;
+    background-color: #286af0;
+    position: relative;
+    height: 40px;
+    text-align: center;
+}
+
+button{
+
+
+}
+
+
+.color-Verde{
+    background-color:lightgreen;
+}
+
+.color-Rojo {
+    background-color: red;
+}
