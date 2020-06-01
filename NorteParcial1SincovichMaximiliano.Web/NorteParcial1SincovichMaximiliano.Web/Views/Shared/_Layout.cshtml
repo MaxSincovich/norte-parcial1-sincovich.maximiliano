@@ -8,28 +8,28 @@
 </head>
 <body>
     <div id="container">
-        <!-- Cabecera -->
         <header>
 
+			<img src="/content/logotipo.png" height="60px" >
             <h2>¿Hay vida en otros planetas? - Sistemas solares</h2>
 
         </header>
-        <!-- Contenido -->
+
+
         <section>
             <article>
                 @RenderBody()
             </article>
         </section>
 
-        <!-- Contenido relacionado-->
-        <aside id="pub">
+        <aside>
             <article>
                 <div>
-                    <h3>Menu</h3>
+                    <h3>Menú</h3>
                     <div>
                         <ul>
 							<li>
-							<a href="@Url.Action("Index", "Home")"> Inicio </a>
+								<a href="@Url.Action("Index", "Home")"> Inicio </a>
 							</li>
 							<li>
 								<a href="@Url.Action("Cosmo", "Home")"> Cosmo </a>
@@ -42,7 +42,7 @@
         </aside>
 
         <footer>
-            <p>¿Hay vida en otros planetas?</p>
+            <p>¿Hay vida en otros planetas? -2020	</p>
         </footer>
     </div>
     @RenderSection("scripts", required: false)

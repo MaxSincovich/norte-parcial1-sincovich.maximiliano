@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\expansion-hubble.jpg" />
+    <Content Include="Content\logotipo.png" />
     <Content Include="Content\site.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
