@@ -12,8 +12,8 @@
     <div class="center"> 
 
 
-	
-    <h2 >Carga de cosmos</h2>
+
+    <h2 class="fullcenter">Carga de cosmos</h2>
 
     <div id="contenedor">
         <br>
@@ -76,33 +76,27 @@
         if (lista.length > 0)
         {
             limpiar();
-          /*  var html = '';
-            html += 'Lista de cosmos';
-            html += '<ul >'
-            for (var i = 0; i < lista.length; i++) {
-                html += '<li> Siglo:' + lista[i].Siglo + '&#8195 Nombre: '+ lista[i].Nombre + ' </li>';
-            }
-			*/
 
 			var tabla   = document.createElement("table");
 			var tblBody = document.createElement("tbody");
 			tabla.appendChild(tblBody);
 			document.getElementById('DivLista').appendChild(tabla);
 
-			  var header = tabla.createTHead();
-			  var row = header.insertRow(0);
-			  var cellsiglo = row.insertCell(0);
-			  var cellnombre = row.insertCell(1);
+			var header = tabla.createTHead();
+			var row = header.insertRow(0);
+			var cellsiglo = row.insertCell(0);
+			var cellnombre = row.insertCell(1);
 
-			  cellsiglo.innerHTML  = "Siglo";	  
-			  cellnombre.innerHTML  = "Nombre";
+			cellsiglo.innerHTML  = "Siglo";	  
+			cellnombre.innerHTML  = "Nombre";
 
+			cellsiglo.setAttribute("style", "font-weight:bold");
+			cellnombre.setAttribute("style", "font-weight:bold");
 
 			for (var i = 0; i < lista.length; i++) {
 				var hilera = document.createElement("tr");
 
 				var celda = document.createElement("td");
-				celda.setAttribute("font-weight","bold");
 				var textoCelda = document.createTextNode(lista[i].Siglo);
 
 				celda.appendChild(textoCelda);
@@ -121,7 +115,6 @@
 
 
 			tabla.setAttribute("border", "2");
-            document.getElementById('DivLista').append(html);
         }
     }
     function LimpiarLista()
